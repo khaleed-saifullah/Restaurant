@@ -1,0 +1,92 @@
+.navbar-expand-md .navbar-nav .nav-link{
+    padding-left: 20px;
+    padding-right: 20px;
+    color: #fff;
+    font-family: 'Gentium Book Basic', serif;
+    font-weight: 700;
+    font-size: 21px;
+}
+.navbar-nav .nav-item{
+    position: relative;
+}
+.navbar-nav .nav-item .active::before{
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 3px;
+    background: #C8C5BA;
+    left: 0;
+    top: 0;
+
+}
+.social-nav{
+    margin-top: 13px;
+}
+.social-nav a{
+    padding: 0 8px;
+}
+.social-nav .fa{
+    font-size: 20px;
+    color: #dab33e;
+}
+
+#header-area{
+    background: url(../images/banner.jpg) no-repeat;
+    background-size: cover;
+    height: 100%;
+    width: 100%;
+}
+.header-inner{
+    padding: 250px 0px;
+}
+.header-text h1{
+    font-family: 'Yeseva One', cursive;
+    font-size: 75px;
+    color: #fff;
+    background: url(../images/header-text-background.png) no-repeat;
+    background-position: center bottom;
+    padding-bottom: 70px;
+}
+
+.header-button a{
+    display: inline-block;
+    color: #fff;
+    font-family: 'Lato', sans-serif;
+    font-size: 18px;
+}
+.btn-filled{
+    padding: 15px 40px;
+    position: relative;
+    z-index: 1;
+    margin: 0 5px;
+}
+.btn-filled::after{
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+    background: #1D2122;
+    opacity: 0.8;
+}
+.btn-filled.yellow-cl::after{
+    background: #D2BA82;
+    opacity: 0.7;
+}
+#about-area{
+    background: url(../images/bg-patttern.png);
+}
+.heading1{
+    font-family: 'Yeseva One', cursive;
+    font-size: 36px;
+    color: #cc9900;
+    background: url(../images/heading1-bg.png) no-repeat;
+    background-position: center bottom;
+    padding-bottom: 30px;
+}
+.about-text p{
+    font-family: 'Lato', sans-serif;
+    font-size: 16px;
+}
