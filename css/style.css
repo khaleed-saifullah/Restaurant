@@ -1,3 +1,9 @@
+p{
+    font-family: 'Lato', sans-serif;
+    font-size: 16px;
+}
+
+
 .navbar-expand-md .navbar-nav .nav-link{
     padding-left: 20px;
     padding-right: 20px;
@@ -78,7 +84,7 @@
 #about-area{
     background: url(../images/bg-patttern.png);
 }
-.heading1{
+.heading{
     font-family: 'Yeseva One', cursive;
     font-size: 36px;
     color: #cc9900;
@@ -89,4 +95,31 @@
 .about-text p{
     font-family: 'Lato', sans-serif;
     font-size: 16px;
+}
+
+#igredients-area{
+    background: url(../images/ing-bg.jpg) no-repeat;
+    background-size: cover;
+    padding: 100px 0;
+}
+.igredients-text{
+    position: relative;
+    padding: 50px;
+    z-index: 1;
+}
+.igredients-text::after{
+    position: absolute;
+    content: "";
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: #000;
+    opacity: 0.6;
+    z-index: -1;
+}
+.heading.white-hd{
+    color: #fff;
+    background: url(../images/heading2-bg.png) no-repeat;
+    background-position: center bottom;
 }
