@@ -123,3 +123,110 @@ p{
     background: url(../images/heading2-bg.png) no-repeat;
     background-position: center bottom;
 }
+#food-area{
+    background: url(../images/bg-patttern.png)
+}
+.food-item-heading{
+    font-family: 'Yeseva One', cursive;
+    color: #c89f2d;
+    font-size: 21px;
+    border-bottom: 1px solid #dfd1a1;
+}
+.food-item-heading span{
+    float: right;
+}
+.single-food-item p{
+    margin: 0;
+}
+.single-food-item{
+    position: relative;
+}
+.special{
+    border: 1px solid #dfd1a1;
+    padding: 7px;
+}
+.special::before{
+    position: absolute;
+    content: "Special";
+    color: #fff;
+    right: -1px;
+    top: -31px;
+    background: #dfd1a1;
+    padding: 3px 5px;
+}
+#reviews-area{
+    background: url(../images/review-bg.jpg) no-repeat;
+    background-size: cover;
+    padding: 100px 0;
+    position: relative;
+}
+.review-text{
+    position: relative;
+    padding: 100px 60px;
+    z-index: 1;
+}
+.review-text::after{
+    position: absolute;
+    content: "";
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: #000;
+    opacity: 0.6;
+    z-index: -1;
+}
+.review-exm{
+    color: #dde0df;
+    font-family: 'Gentium Book Basic', serif;
+    font-weight: bold;
+    font-size: 25px;
+}
+.review-author{
+    display: block;
+    font-family: 'Lato', sans-serif;
+    font-size: 18px;
+    color: #fff;
+}
+#reviewCarousel::before{
+    position: absolute;
+    font-family: FontAwesome;
+    content: "\f10d";
+    left: -38px;
+    top: -17px;
+    font-size: 35px;
+    color:#999b99;
+}
+#contact-area{
+    background: url(../images/bg-patttern.png);
+
+}
+.contact-image img{
+    width: 259px;
+}
+
+.contact-text p{
+    font-family: 'Lato', sans-serif;
+    font-size: 16  px;
+    color: #4c4c4c;
+}
+.contact-form{
+    text-align: left;
+}
+.form-group{
+    font-size: 14px;
+    color: #c9a131;
+    font-weight: bold;
+}
+.contact-form button{
+    padding: 5px 50px;
+    
+    display: block;
+    margin: 0 auto;
+    background: #c9a131;
+    color: #fff;
+    border: none;
+
+}
+
+
