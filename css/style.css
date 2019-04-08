@@ -3,14 +3,30 @@ p{
     font-size: 16px;
 }
 
-
-.navbar-expand-md .navbar-nav .nav-link{
+.bg-navbar{
+    z-index: 1;
+}
+.bg-navbar::after{
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+    background: #565656;
+    opacity: 0.4;
+}
+.navbar-expand-lg .navbar-nav .nav-link{
     padding-left: 20px;
     padding-right: 20px;
     color: #fff;
     font-family: 'Gentium Book Basic', serif;
     font-weight: 700;
     font-size: 21px;
+}
+.navbar-light .navbar-nav .active>.nav-link, .navbar-light .navbar-nav .nav-link.active, .navbar-light .navbar-nav .nav-link.show, .navbar-light .navbar-nav .show>.nav-link {
+    color: #fff;
 }
 .navbar-nav .nav-item{
     position: relative;
@@ -25,6 +41,7 @@ p{
     top: 0;
 
 }
+
 .social-nav{
     margin-top: 13px;
 }
@@ -90,7 +107,7 @@ p{
     color: #cc9900;
     background: url(../images/heading1-bg.png) no-repeat;
     background-position: center bottom;
-    padding-bottom: 30px;
+    padding-bottom: 35px;
 }
 .about-text p{
     font-family: 'Lato', sans-serif;
@@ -100,6 +117,7 @@ p{
 #igredients-area{
     background: url(../images/ing-bg.jpg) no-repeat;
     background-size: cover;
+    background-attachment: fixed;
     padding: 100px 0;
 }
 .igredients-text{
@@ -159,6 +177,7 @@ p{
     background-size: cover;
     padding: 100px 0;
     position: relative;
+    background-attachment: fixed;
 }
 .review-text{
     position: relative;
@@ -228,5 +247,56 @@ p{
     border: none;
 
 }
+#footer-area{
+    background: #191919;
+}
+
+.footer-text .heading{
+    font-size: 21px;
+    background: url(../images/footer-heading-bg.png) no-repeat;
+    background-position: center bottom;
+}
+.footer-text p{
+    font-size: 16px;
+    color: #fff;
+}
+.social-icons .fa,.card-icon .fa{
+    color: #fff;
+    font-size: 20px;
+    margin: 0 5px;
+}
 
 
+@media(max-width:992px){
+    .navbar-brand img {
+        height: 67px;
+    }
+    .contact-image img{
+        width: 240px;
+    }
+}
+
+@media(max-width:768px){
+    .navbar-light .navbar-toggler{
+        border-color:#fff;        
+    }
+    .navbar-light .navbar-toggler {
+        color:#fff;    
+    }
+    .contact-image img{
+        width: 150px;
+    }
+    .social-icons .fa,.card-icon .fa{
+        font-size: 15px;
+        margin: 0 5px;
+    }
+}
+
+@media(max-width:576px){
+    .header-text h1{
+        font-size: 50px;
+    }
+    .contact-image img{
+        width: 240px;
+    }
+}
