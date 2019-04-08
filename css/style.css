@@ -266,7 +266,7 @@ p{
     margin: 0 5px;
 }
 
-
+/* Media Quiries */
 @media(max-width:992px){
     .navbar-brand img {
         height: 67px;
@@ -298,5 +298,20 @@ p{
     }
     .contact-image img{
         width: 240px;
+    }
+}
+@media(max-width:360px){
+    .btn-filled{
+        margin-bottom: 10px;
+    }
+    .igredients-text img{
+        width: 100%;
+    }
+
+    .review-exm{
+        font-size: 20px;
+    }
+    .contact-image img{
+        width: 150px;
     }
 }
